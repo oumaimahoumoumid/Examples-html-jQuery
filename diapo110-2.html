@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(function(){
+		  $("button.b1").click(function(){
+		    $(":text").hide();
+		  });
+
+		  $("button.b2").click(function(){
+		    $(":password").hide();
+		  });
+
+		  $("button.b3").click(function(){
+		    $("[name='c2']").attr('checked', 'true');
+		  });
+		});
+	</script>
+</head>
+<body>
+
+	<h2>Titre H2</h2>
+
+	Nom : <input type="text" size="20"><br>
+	Pass : <input type="password" size="20"><br>
+	<input type="checkbox" name ="c1"> check1<br>
+	<input type="checkbox" name ="c2"> check2<br>
+	<input type="checkbox" name ="c3"> check3<br>
+
+
+	<button class="b1">Masquer champs text</button>
+	<button class="b2">Masquer champs Password</button>
+	<button class="b3">Cocher une case</button>
+
+	
+</body>
+</html>
+

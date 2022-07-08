@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(function(){
+		  $("button.b1").click(function(){
+		    $("p:first").hide();
+		  });
+
+		  $("button.b2").click(function(){
+		    $("p:last").hide();
+		  });
+
+		  $("button.b3").click(function(){
+		    $("tr:even").css("background-color", "yellow");
+		  });
+
+		  $("button.b4").click(function(){
+		    $("tr:odd").css("background-color", "blue");
+		  });
+		});
+	</script>
+</head>
+<body>
+
+	<h2>Titre niveau 2</h2>
+
+	<p>Contenu paragraphe 1.....</p>
+	<p>Contenu paragraphe 2.....</p>
+	<p>Contenu dernier paragraphe .....</p>
+
+	<button class="b1">Masquer Parag1</button>
+	<button class="b2">Masquer dernier Parag</button> <br><br><br>
+
+	<center>
+	<table border="2" width="80%">
+		<tr>
+			<th>
+				Ent1
+			</th>
+			<th>
+				Ent2
+			</th>
+		</tr>
+		<tr>
+			<td>
+				L1-C1
+			</td>
+			<td>
+				L1-C2
+			</td>
+		</tr>
+		<tr>
+			<td>
+				L2-C1
+			</td>
+			<td>
+				L2-C2
+			</td>
+		</tr>
+		<tr>
+			<td>
+				L3-C1
+			</td>
+			<td>
+				L3-C2
+			</td>
+		</tr>
+		<tr>
+			<td>
+				L4-C1
+			</td>
+			<td>
+				L4-C2
+			</td>
+		</tr>
+	</table>
+
+	<button class="b3"> Lignes paires</button>
+	<button class="b4"> Lignes impaires</button> <br><br><br>
+	</center>
+
+	
+</body>
+</html>
+

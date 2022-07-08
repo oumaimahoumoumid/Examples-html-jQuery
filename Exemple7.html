@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Animation Personnalisée</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+	  $(function() {
+		$('#enchainer').click( function() {
+		  $('img').animate({ 'border-width': '30'}, 1500 )
+				  .animate({ 'width': '-=100'}, 1500);
+		});  
+		
+	  });
+	</script>
+  </head>
+  <body>
+	
+	<button id="enchainer">Enchaîner les animations</button><br/>
+	<br />
+	<center>><img src="terre.gif" style="border: 2px black solid;" width="200"></center>
+	
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script>
+			$(function(){
+			  $("button.b1").click(function(){
+			    $("ul.l2 li:first").hide();
+			  });
+
+			  $("button.b2").click(function(){
+			    $("ul.l1 li:eq(2)").css('color' , 'blue');
+			  });
+
+			  $("button.b3").click(function(){
+			    $("ul.l1 li:gt(2)").css('color' , 'yellow');
+			  });
+			});
+		</script>
+	</head>
+	<body>
+
+		<p>Liste 1:</p>
+		<ul class="l1">
+		  <li>Element 1</li>
+		  <li>Element 2</li>
+		  <li>Element 3</li>
+		  <li>Element 4</li>
+		  <li>Element 5</li>
+		  <li>Element 6</li>
+		</ul>
+
+		<p>Liste 2:</p>
+		<ul class="l2">
+		  <li>Element 1</li>
+		  <li>Element 2</li>
+		  <li>Element 3</li>
+		</ul>
+
+		<button class="b1">Masquer Elt1</button>
+		<button class="b2">Marquer Elt3</button>
+		<button class="b3">Marquer Elt4-6</button>
+
+	</body>
+</html>
